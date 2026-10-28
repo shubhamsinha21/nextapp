@@ -11,3 +11,4 @@
 9. Pages and nested layouts
 10. Navigation Vs useRouter
 11. Dynamic routes
+12. Query and search params
