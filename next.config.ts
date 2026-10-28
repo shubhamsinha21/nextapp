@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+
+  images:{
+    domains: ["images.pexels.com"] //using 3rd party images
+  },
   /* config options here */
   experimental: {
     agentFeedback: true,
