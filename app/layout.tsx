@@ -1,6 +1,13 @@
 import Link from 'next/link'
 import type {ReactNode} from 'react'
 import "./globals.css"
+import {Inter} from "next/font/google" // to optimise google font
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap"
+})
 
 export default function RootLayout({children}: {children: ReactNode}) {
   return (
@@ -8,7 +15,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
       <head>
         <title>Next.js 13 App Router</title>
       </head>
-      <body>
+      <body className={inter.className}>
         <header style={{padding: 6, background:"lightblue"}}> 
           My App Navbar
           <nav style={{display:"flex", gap: 6,}}>
