@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
+import CurrentFilter from "./CurrentFilter.jsx"
 
 interface ProductsPageProps {
   // searchParams comes in async category and will be handled like a promise
@@ -72,6 +73,8 @@ async function ProductList({ searchParams }: ProductsPageProps) {
       <Suspense fallback={<p>Loading products...</p>}>
         <ProductList searchParams={searchParams}/>
       </Suspense>
+
+      <CurrentFilter/>
 
     </div>
   );
