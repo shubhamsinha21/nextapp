@@ -1,7 +1,5 @@
-import React from 'react'
-
-export default function page() {
+export default function MetadataPage() {
   return (
-    <div>page</div>
+    <div>Metadata Page</div>
   )
 }

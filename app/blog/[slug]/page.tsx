@@ -1,4 +1,6 @@
+export const instant = false;
 // interface for blogs data we will fetch from the api
+
 interface BlogPageProps {
     params: {
         slug: string;
