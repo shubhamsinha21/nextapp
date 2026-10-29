@@ -2,10 +2,13 @@ export const instant = false;
 
 export default async function ContactPage() {
 
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  // const res = await fetch("https://jsonplaceholder.typicode.com/posts")
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store"
+  }) // to not store cache and have dynamic data from api-call
   console.log("Status:", res.status)
   const data = await res.json()
-  // console.log(data)
+  // console.log(data)   
   //.then(console.log) -> returns nothing and then data ka value undefined and hence not executes
 
   return (
